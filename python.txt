@@ -1,0 +1,20 @@
+print('This is a string {}'.format('INSERTED'))
+print('The {0} {0} {0}'.format('fox','brown','quick'))
+print('The {f} {f} {f}'.format(f='fox',b='brown',q='quick'))
+print(f'{name} is {age} years old.')
+my_list = ['STRING',100,23.2]
+len('my_list')
+my_dict = {'key':'value1','key2':'value2'}
+my_dict
+my_dict['key']
+prices_lookup = {'apple':2.99,'oranges':1.99,'milk':5.99}
+d = {'k1':123,'k2':[0;1,2,],'k3':{insidekey}:100}}
+d['k2']
+t = (1,2,3)
+mylist = [1,2,3]
+type(t)
+type(mylist)
+len(t)
+t = ('a','a,'b','j.')
+mylist =[1,1,1,1,1,2,2,2,2,3,3,3,3]
+set(mylist)
