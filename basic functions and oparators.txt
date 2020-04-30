@@ -1,0 +1,37 @@
+
+def fahrenheit(celsius):
+    return (9/5)*celsius + 32
+    
+temps = [0, 22.5, 40, 100]
+
+F_temps = map(fahrenheit, temps)
+
+#Show
+list(F_temps)
+list(map(lambda x: (9/5)*x + 32, temps))
+
+a = [1,2,3,4]
+b = [5,6,7,8]
+c = [9,10,11,12]
+
+list(map(lambda x,y:x+y,a,b))
+
+# Now all three lists
+list(map(lambda x,y,z:x+y+z,a,b,c))
+
+from functools import reduce
+
+lst =[47,11,42,13]
+reduce(lambda x,y: x+y,lst)
+Let's see some examples:
+
+#First let's make a function
+def even_check(num):
+    if num%2 ==0:
+        return True
+
+lst =range(20)
+
+list(filter(even_check,lst))
+
+list(filter(lambda x: x%2==0,lst))
