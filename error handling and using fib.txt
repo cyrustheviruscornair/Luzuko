@@ -1,0 +1,55 @@
+class MyGen():
+  currrent = 0
+  def __init_(self, first, last):
+    self.first = first
+    self.last = last
+
+def __iter__(self):
+  return self
+    
+  def __next__(self):
+    if MyGen.current < self.last:
+      num = MyGen.current
+      MyGen.currrent +=1
+      return num
+    raise StopIteration
+    
+gen = MyGen(1)
+for i in gen:
+    print(i)
+
+def fib(number):
+  a = 0
+  b = 1
+  for i in range(number):
+     yield a
+     temp = a
+     a = b
+     b = temp + b
+
+for x in fib(10000):
+  print(x)
+________________________________________________________________________________________________________________
+
+
+
+
+from random import randint
+# generate a number 1~ 10
+answer = randint(1, 10)
+
+# input from user?
+guess = input('guess a number 1~10: ')
+# check that input is number 1~10
+while True:
+    try:
+        print(answer)
+       guess = int(input('guess a number 1~10: '))
+           if 0 < guess < 11:
+                   guess == answer:
+               print('you are a genious!')
+               break
+       else:
+           print('hey bozo, I said 1~10')
+    except ValueError:
+        print('please enter a number')
