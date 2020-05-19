@@ -1,0 +1,28 @@
+import socket
+from datetime import datetime
+
+
+target = raw_input("Enter a target: ")
+targetIP = socket.gethostbyname(target)
+
+print "Now working,wait for results", targetIP
+
+start_time = datetime.now()
+print ' Scanning is beginning at ', start_time
+ports = [21,22,25,53,80,443]
+
+try:
+    for port in ports:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        result = socket.connect_ex((targetIP, port))
+        if result == 0:
+            print str(port) + ' is opened'
+            socket.close()
+
+
+except socket.error:
+        pass
+
+time_end = datetime.now()
+
+   print 'Scanning is finished at ', time_end
