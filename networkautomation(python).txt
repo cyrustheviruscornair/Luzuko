@@ -1,0 +1,71 @@
+>>> string1[:-5]
+'0 E2 10.110.8.9 [160/5] VIA 10.119.254.6, 0:1:00, Ethe'
+>>> string1[::2]
+'0E 01089[6/]VA1.1.5.,010,Ehre2'
+>>> string1[: :2]
+'0E 01089[6/]VA1.1.5.,010,Ehre2'
+>>> string1[: :-1]
+Cisco model: (model), (slots) WAN slots, IOS (ios)'
+>>>
+>>> f"Cisco model: {model}, {slot} WAN slots, IOS {ios}"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'slot' is not defined
+>>> f"Cisco model: (model), (slots) WAN slots, IOS (ios)"
+'Cisco model: (model), (slots) WAN slots, IOS (ios)'
+>>> f"Cisco model: (model), (slots * 2) WAN slots, IOS (ios)"
+'Cisco model: (model), (slots * 2) WAN slots, IOS (ios)'
+>>> mystring[10: 15
+... m
+  File "<stdin>", line 2
+    m
+    ^
+SyntaxError: invalid syntax
+>>> string1 = "0 E2 10.110.8.9 [160/5] VIA 10.119.254.6, 0:1:00, Ethernet2"
+>>> string1[5: 15]
+'10.110.8.9'
+>>> string1[5: 14]
+'10.110.8.'
+>>> string1[5:]
+'10.110.8.9 [160/5] VIA 10.119.254.6, 0:1:00, Ethernet2'
+>>> string1[:10]
+'0 E2 10.11'
+>>> string1[:]
+'0 E2 10.110.8.9 [160/5] VIA 10.119.254.6, 0:1:00, Ethernet2'
+>>> string1[-1]
+'2'
+>>> string1[-2]
+'CiscoSwitch'
+>>> x * 3
+'CiscoCiscoCisco'
+>>> x
+'Cisco'
+>>> "o" in x
+True
+>>> "b" in x
+False
+>>> "b" not in x
+True
+>>> "Cisco model: %s, %d WAN slots,IOS %f" % ("2600XM", 2, 12.4)
+'Cisco model: 2600XM, 2 WAN slots,IOS 12.400000'
+>>>
+>>> "Cisco model: %s, %d WAN slots,IOS %f" % ("2600XM", 2, 12.4)
+'Cisco model: 2600XM, 2 WAN slots,IOS 12.400000'
+>>> "Cisco model: %s, %d WAN slots,IOS %f" % ("2600XM", 2, 12.3)
+'Cisco model: 2600XM, 2 WAN slots,IOS 12.300000'
+>>> model = '2600XM'
+>>> slots = 4
+>>> ios = 12.3
+>>>
+>>> f"Cisco model: (model), (slots) WAN slots, IOS (ios)"
+'Cisco model: (model), (slots) WAN slots, IOS (ios)'
+>>>
+>>> f"Cisco model: {model}, {slot} WAN slots, IOS {ios}"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'slot' is not defined
+>>> f"Cisco model: (model), (slots) WAN slots, IOS (ios)"
+'Cisco model: (model), (slots) WAN slots, IOS (ios)'
+>>> f"Cisco model: (model), (slots * 2) WAN slots, IOS (ios)"
+'Cisco model: (model), (slots * 2) WAN slots, IOS (ios)'
+>>> mystring[10: 15
